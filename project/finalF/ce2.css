@@ -1,0 +1,84 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Main content styles */
+main {
+    padding: 2rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2rem;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+    height: 100%; /* Make all cards the same height */
+    display: flex; /* Add flexbox to center button */
+    flex-direction: column; /* Align button vertically */
+    justify-content: space-between; /* Push content to the top */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+    margin-bottom: 1rem;
+}
+
+.product_name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.product_desc {
+    color: #777;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2c5200;
+}
+
+.add {
+    font-size: 1rem;
+    background-color: #2c5200;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 1rem 2rem; /* Increase the padding for a larger button */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    align-self: center; /* Center the button horizontally */
+}
+
+.add:hover {
+    background-color: #0e4704;
+}
